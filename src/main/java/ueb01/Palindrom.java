@@ -15,12 +15,12 @@ class Palindrom {
 		s = s.replaceAll(" ", "");
 		s = s.toLowerCase();
 
-		int laenge = s.length();
-
 		char[] array = s.toCharArray();
 		for (int i = 0; i< array.length; i++) {
 			stack.push(array[i]);
 		}
+
+		int laenge = stack.size();
 
 		while(laenge > 0){
 			rueckwaerts += stack.pop();
