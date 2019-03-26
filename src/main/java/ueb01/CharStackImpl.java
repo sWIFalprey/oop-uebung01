@@ -37,6 +37,7 @@ class CharStackImpl implements CharStack {
         }
         if (head.next == null){
             head = null;
+            return parent.value;
         }
 
         while(it.next != null){
